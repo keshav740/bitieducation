@@ -78,22 +78,22 @@ const TimeTracke = () => {
       </div>
     
       <div className="flex space-x-2 p-2">
-  <div className="flex-1 bg-green-500 shadow-md rounded p-2 py-4">
+  <div className="flex-1 bg-green-500 shadow-md rounded p-2 py-4 hover:bg-green-600 transition-colors duration-300">
     {/* Content */}
   </div>
-  <div className="flex-1 bg-pink-500 shadow-md rounded p-2 py-4">
+  <div className="flex-1 bg-pink-500 shadow-md rounded p-2 py-4 hover:bg-pink-600 transition-colors duration-300">
     {/* Content */}
   </div>
-  <div className="flex-1 bg-orange-500 shadow-md rounded p-2 py-4">
+  <div className="flex-1 bg-orange-500 shadow-md rounded p-2 py-4 hover:bg-orange-600 transition-colors duration-300">
     {/* Content */}
   </div>
-  <div className="flex-1 bg-blue-500 shadow-md rounded p-2 py-4">
+  <div className="flex-1 bg-blue-500 shadow-md rounded p-2 py-4 hover:bg-blue-600 transition-colors duration-300">
     {/* Content */}
   </div>
-  <div className="flex-1 bg-red-500 shadow-md rounded p-2 py-4">
+  <div className="flex-1 bg-red-500 shadow-md rounded p-2 py-4 hover:bg-pink-600 transition-colors duration-300">
     {/* Content */}
   </div>
-  <div className="flex-1 bg-yellow-500 shadow-md rounded p-2 py-4">
+  <div className="flex-1 bg-yellow-500 shadow-md rounded p-2 py-4 hover:bg-yellow-600 transition-colors duration-300">
     {/* Content */}
   </div>
 </div>

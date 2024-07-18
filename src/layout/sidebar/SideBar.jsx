@@ -8,6 +8,10 @@ import { GrTask } from "react-icons/gr";
 import { MdLocalActivity, MdEmail } from "react-icons/md";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import TimeTracke from "../../components/timetracker/TimeTracke";
+import Employee from "../../components/hr/Employee";
+import EmolpyeeList from "../../components/hr/EmployeeList";
+import SingleEmployee from "../../components/hr/SingleEmployee";
+
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);
@@ -74,8 +78,8 @@ const SideBar = () => {
         {/* Sidebar content */}
         <nav>
           <a
-            href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            href="/profile/username"
+            className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <FaHouseChimneyUser className="w-6 h-6 mr-2" />
             Home
@@ -223,6 +227,9 @@ const SideBar = () => {
       <div className="flex-1 p-10 pt-20 pl-04 overflow-y-auto border-solid border  border-red-600 rounded-md bg-pink-100">
         {/* Your main content goes here */}
        <TimeTracke />
+       <Employee />
+       <EmolpyeeList />
+       <SingleEmployee />
       </div>
     </div>
   );

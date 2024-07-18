@@ -1,15 +1,19 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Layout from "./layout/Layout";
-import SideBar from "./layout/sidebar/SideBar";
-import TopBar from "./layout/topbar/TopBar";
+import TimeTrackerTable from "./components/timetracker/TimeTrackerTable";
 
 function App() {
   return (
-    <>
-      <div className="App">
-      <Layout />
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="/profile/username" element={<TimeTrackerTable />} />
+        </Routes>
+      </Router>
     </div>
-    </>
   );
 }
 
