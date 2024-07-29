@@ -11,6 +11,7 @@ import TimeTracke from "../../components/timetracker/TimeTracke";
 import Employee from "../../components/hr/Employee";
 import EmolpyeeList from "../../components/hr/EmployeeList";
 import SingleEmployee from "../../components/hr/SingleEmployee";
+import TopBar from "../../components/projects/TopBar";
 
 
 const SideBar = () => {
@@ -230,6 +231,7 @@ const SideBar = () => {
        <Employee />
        <EmolpyeeList />
        <SingleEmployee />
+       <TopBar />
       </div>
     </div>
   );

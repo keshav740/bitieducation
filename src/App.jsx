@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Layout />} />
-          <Route path="/profile/username" element={<TimeTrackerTable />} />
+          <Route path="/profile/username" element={<Layout><TimeTrackerTable /></Layout>} />
         </Routes>
       </Router>
     </div>

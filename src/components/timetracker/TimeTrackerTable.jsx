@@ -1,4 +1,7 @@
 import React from "react";
+import TopBar from "../../layout/topbar/TopBar";
+import SideBar from "../../layout/sidebar/SideBar";
+
 
 
 
@@ -6,7 +9,6 @@ import React from "react";
 const TimeTrackerTable = () => {
   return (
     <>
-   
       <div className="overflow-x-auto p-2">
         <table className="min-w-full bg-white border-collapse border border-pink-300">
           <thead className="bg-pink-300 hover:bg-pink-400 transition-colors duration-300">

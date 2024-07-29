@@ -15,79 +15,76 @@ const SingleEmployee = () => {
     switch (activeSection) {
       case "primaryDetails":
         return (
-          <div className="bg-pink-200 p-2 border border-red-500 rounded-lg">
-            <h2 className="text-xl font-semibold py-2">Primary Details</h2>
-            <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/3 p-2">
-                <div className="p-4 rounded-lg ">
-                  <div className="flex">
-                    <div className="">
-                      <h2 className="text-xl hover:text-pink-500">
-                        First Name
-                      </h2>
-                      <p className="text-gray-600">Keshav</p>
+          <>
+            <div className="bg-pink-200 p-2 border border-red-500 rounded-lg">
+              <h2 className="text-xl font-semibold py-2">Primagry Details</h2>
+              <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-1/3 p-2">
+                  <div className="p-4 rounded-lg">
+                    <div className="flex">
+                      <div className="">
+                        <h2 className="text-xl hover:text-pink-500">
+                          Job Title
+                        </h2>
+                        <p className="text-gray-600">Consultant</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/3 p-2">
+                  <div className="p-4 rounded-lg">
+                    <div className="flex">
+                      <div className="">
+                        <h2 className="text-xl hover:text-pink-500">
+                          Department
+                        </h2>
+                        <p className="text-gray-600">IT</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/3 p-2">
+                  <div className="p-4 rounded-lg">
+                    <div className="flex">
+                      <div className="">
+                        <h2 className="text-xl hover:text-pink-500">
+                          Business Unit
+                        </h2>
+                        <p className="text-gray-600">- Not Set -</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 p-2">
-                <div className="p-4 rounded-lg ">
-                  <div className="flex">
-                    <div className="">
-                      <h2 className="text-xl hover:text-pink-500">Last Name</h2>
-                      <p className="text-gray-600">Saini</p>
+              <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-1/3 p-2">
+                  <div className="p-4 rounded-lg">
+                    <div className="flex">
+                      <div className="">
+                        <h2 className="text-xl hover:text-pink-500">
+                          Reports To
+                        </h2>
+                        <p className="text-gray-600">Jitendra Yadav</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-full md:w-1/3 p-2">
-                <div className="p-4 rounded-lg ">
-                  <div className="flex">
-                    <div className="">
-                      <h2 className="text-xl hover:text-pink-500">
-                        Marital Status
-                      </h2>
-                      <p className="text-gray-600">- Not Set-</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/3 p-2">
-                <div className="p-4 rounded-lg ">
-                  <div className="flex">
-                    <div className="">
-                      <h2 className="text-xl hover:text-pink-500">Gender</h2>
-                      <p className="text-gray-600">Male</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/3 p-2">
-                <div className="p-4 rounded-lg ">
-                  <div className="flex">
-                    <div className="">
-                      <h2 className="text-xl hover:text-pink-500">
-                        Date Of Birth
-                      </h2>
-                      <p className="text-gray-600">19-02-2004</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/3 p-2">
-                <div className="p-4 rounded-lg ">
-                  <div className="flex">
-                    <div className="">
-                      <h2 className="text-xl hover:text-pink-500">PWD</h2>
-                      <p className="text-gray-600">- Not Set -</p>
+                <div className="w-full md:w-1/3 p-2">
+                  <div className="p-4 rounded-lg">
+                    <div className="flex">
+                      <div className="">
+                        <h2 className="text-xl hover:text-pink-500">Emp Id</h2>
+                        <p className="text-gray-600">keshavsaini</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div className="bg-pink-200 mt-2 p-2 border border-red-500 rounded-lg h-1/2 text-black font-semibold text-xl">
+              Reporting Team
+            </div>
+          </>
         );
       case "about":
         return (
