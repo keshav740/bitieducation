@@ -42,22 +42,22 @@ const EmolpyeeList = () => {
                 +91 7505189143
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-               Consultant
+                Consultant
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
                 IT
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              bitieducation
+                bitieducation
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </td>
             </tr>
             <tr className="bg-pink-100 hover:bg-pink-300 transition-colors duration-300">
@@ -71,22 +71,22 @@ const EmolpyeeList = () => {
                 +91 7505189143
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-               Consultant
+                Consultant
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
                 IT
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              bitieducation
+                bitieducation
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </td>
             </tr>
             <tr className="bg-pink-50 hover:bg-pink-200 transition-colors duration-300">
@@ -100,22 +100,22 @@ const EmolpyeeList = () => {
                 +91 7505189143
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-               Consultant
+                Consultant
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
                 IT
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              bitieducation
+                bitieducation
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </td>
             </tr>
             <tr className="bg-pink-100 hover:bg-pink-300 transition-colors duration-300">
@@ -129,22 +129,22 @@ const EmolpyeeList = () => {
                 +91 7505189143
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-               Consultant
+                Consultant
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
                 IT
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              bitieducation
+                bitieducation
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </td>
             </tr>
             <tr className="bg-pink-50 hover:bg-pink-200 transition-colors duration-300">
@@ -158,22 +158,22 @@ const EmolpyeeList = () => {
                 +91 7505189143
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-               Consultant
+                Consultant
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
                 IT
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              bitieducation
+                bitieducation
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </td>
             </tr>
             <tr className="bg-pink-100 hover:bg-pink-300 transition-colors duration-300">
@@ -187,22 +187,22 @@ const EmolpyeeList = () => {
                 +91 7505189143
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-               Consultant
+                Consultant
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
                 IT
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              bitieducation
+                bitieducation
               </td>
               <td className="text-left py-2 px-4 border-b border-pink-300">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-red-500">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </td>
             </tr>
             {/* Add more rows as needed */}

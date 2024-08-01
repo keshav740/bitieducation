@@ -117,7 +117,7 @@ const FormModal = ({ isVisible, onClose }) => {
                   <input
                     type="date"
                     id="startDate"
-                    className="border rounded-lg p-2 w-full bg-pink-100"
+                    className="border rounded-lg p-2 w-full bg-pink-100 cursor-pointer"
                     required
                   />
                 </div>

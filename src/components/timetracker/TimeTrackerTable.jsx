@@ -1,9 +1,4 @@
 import React from "react";
-import TopBar from "../../layout/topbar/TopBar";
-import SideBar from "../../layout/sidebar/SideBar";
-
-
-
 
 
 const TimeTrackerTable = () => {
@@ -14,25 +9,25 @@ const TimeTrackerTable = () => {
           <thead className="bg-pink-300 hover:bg-pink-400 transition-colors duration-300">
             <tr>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              Start Time
+                Start Time
               </th>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              End Time
+                End Time
               </th>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              Spent Time
+                Spent Time
               </th>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              User Activity Status
+                User Activity Status
               </th>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              Working Status
+                Working Status
               </th>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              Reason
+                Reason
               </th>
               <th className="text-left py-2 px-4 border-b border-pink-300">
-              Status 
+                Status
               </th>
             </tr>
           </thead>

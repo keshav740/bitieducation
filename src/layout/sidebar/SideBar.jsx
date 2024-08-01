@@ -12,13 +12,27 @@ import Employee from "../../components/hr/Employee";
 import EmolpyeeList from "../../components/hr/EmployeeList";
 import SingleEmployee from "../../components/hr/SingleEmployee";
 import TopBar from "../../components/projects/TopBar";
-
+import { MdDashboard } from "react-icons/md";
+import { SiProducthunt } from "react-icons/si";
+import { LuMonitorPlay } from "react-icons/lu";
+import { MdOutlineAccessTimeFilled } from "react-icons/md";
+import { RiLiveFill } from "react-icons/ri";
+import { PiTreeStructureDuotone } from "react-icons/pi";
+import { TbSettingsPause } from "react-icons/tb";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { VscReport } from "react-icons/vsc";
+import { FaUsers } from "react-icons/fa6";
+import { AiOutlineUsergroupDelete } from "react-icons/ai";
+import { PiMicrosoftTeamsLogoLight } from "react-icons/pi";
+import { CiSettings } from "react-icons/ci";
+import Exports from "../../components/profile/Exports";
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
+  const [dropdownOpenOffice, setDropdownOpenOffice] = useState(false);
 
   const handleMouseEnter = () => {
     setDropdownOpen(true);
@@ -44,12 +58,24 @@ const SideBar = () => {
     setDropdownOpen2(false);
   };
 
+  const handleMouseEnterOffice = () => {
+    setDropdownOpenOffice(true);
+  };
+
+  const handleMouseLeaveOffice = () => {
+    setDropdownOpenOffice(false);
+  };
+
   const toggleSidebar = () => {
     setOpen(!open);
   };
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const toggleDropdownOffice = () => {
+    setDropdownOpenOffice(!dropdownOpenOffice);
   };
 
   const toggleDropdown1 = () => {
@@ -94,7 +120,7 @@ const SideBar = () => {
               onClick={toggleDropdown}
               className="flex items-center w-full  px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
             >
-              <FaClock className="w-6 h-6 mr-4" />
+              <FaClock className="w-6 h-6 mr-2" />
               Time Tracker
               <svg
                 className={`w-6 h-6 ml-10 ${dropdownOpen ? "rotate-180" : ""}`}
@@ -113,14 +139,91 @@ const SideBar = () => {
               <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
                 <a
                   href="#"
-                  className="flex items-center  px-4 rounded transition duration-200  py-5"
+                  className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
+                >
+                  <MdDashboard className="w-6 h-6 mr-2" />
+                  Dashboard
+                </a>
+
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <IoMdFingerPrint className="w-6 h-6 mr-2" />
                   Attendence
                 </a>
+
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
+                >
+                  <SiProducthunt className="w-6 h-6 mr-2" />
+                  Productivity
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
+                >
+                  <MdLocalActivity className="w-6 h-6 mr-2" />
+                  Activity
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
+                >
+                  <LuMonitorPlay className="w-6 h-6 mr-2" />
+                  Monitor
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
+                >
+                  <MdOutlineAccessTimeFilled className="w-6 h-6 mr-2" />
+                  Time Claim
+                </a>
               </div>
             )}
           </div>
+
+          <div
+            className="relative"
+            onMouseEnter={handleMouseEnterOffice}
+            onMouseLeave={handleMouseLeaveOffice}
+          >
+            <button
+              onClick={toggleDropdownOffice}
+              className="flex items-center w-full  px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            >
+              <LuMonitorPlay className="w-6 h-6 mr-2" />
+              Office TV
+              <svg
+                className={`w-6 h-6 ml-16 ${
+                  dropdownOpenOffice ? "rotate-180" : ""
+                }`}
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 3a1 1 0 01.832.445l4.911 7a1 1 0 01-.832 1.555H5.089a1 1 0 01-.832-1.555l4.911-7A1 1 0 0110 3zM5.268 10h9.465L10 5.236 5.268 10zm9.465 1H5.268L10 14.764 14.733 11z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+            {dropdownOpenOffice && (
+              <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200  py-5"
+                >
+                  <RiLiveFill className="w-6 h-6 mr-2" />
+                  Live Screens
+                </a>
+              </div>
+            )}
+          </div>
+
           <div
             className="relative"
             onMouseEnter={handleMouseEnter1}
@@ -149,14 +252,29 @@ const SideBar = () => {
               <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
                 <a
                   href="#"
-                  className="flex items-center px-4 rounded transition duration-200  py-5"
+                  className="flex items-center px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <ImProfile className="w-6 h-6 mr-2" />
                   Employees
                 </a>
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                >
+                  <PiTreeStructureDuotone className="w-6 h-6 mr-2" />
+                  Org Structure
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                >
+                  <TbSettingsPause className="w-6 h-6 mr-2" />
+                  HR Settings
+                </a>
               </div>
             )}
           </div>
+
           <div
             className="relative"
             onMouseEnter={handleMouseEnter2}
@@ -204,15 +322,74 @@ const SideBar = () => {
                   <MdLocalActivity className="w-6 h-6 mr-2" />
                   Activity
                 </a>
+                <a
+                  href="#"
+                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                >
+                  <VscWorkspaceTrusted className="w-6 h-6 mr-2" />
+                  Role
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                >
+                  <VscReport className="w-6 h-6 mr-2" />
+                  Reports
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                >
+                  <TbSettingsPause className="w-6 h-6 mr-2" />
+                  Setting
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center  px-2 rounded transition duration-200  py-5 hover:bg-pink-100"
+                >
+                  <FaUsers className="w-6 h-6 mr-2" />
+                  Members Allocation
+                </a>
               </div>
             )}
           </div>
+
+          <a
+            href="#"
+            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+          >
+            <AiOutlineUsergroupDelete className="w-6 h-6 mr-2" />
+            Users
+          </a>
+
+          <a
+            href="#"
+            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+          >
+            <PiMicrosoftTeamsLogoLight className="w-6 h-6 mr-2" />
+            Teams
+          </a>
+
           <a
             href="#"
             className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <MdEmail className="w-6 h-6 mr-2" />
             Mails
+          </a>
+          <a
+            href="#"
+            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+          >
+            <CiSettings className="w-6 h-6 mr-2" />
+            Settings
+          </a>
+          <a
+            href="#"
+            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+          >
+            <CgProfile className="w-6 h-6 mr-2" />
+            Clients
           </a>
           <a
             href="#"
@@ -227,11 +404,12 @@ const SideBar = () => {
       {/* Main content */}
       <div className="flex-1 p-10 pt-20 pl-04 overflow-y-auto border-solid border  border-red-600 rounded-md bg-pink-100">
         {/* Your main content goes here */}
-       <TimeTracke />
-       <Employee />
-       <EmolpyeeList />
-       <SingleEmployee />
-       <TopBar />
+        <TimeTracke />
+        <Employee />
+        <EmolpyeeList />
+        <SingleEmployee />
+        <TopBar />
+        <Exports />
       </div>
     </div>
   );
