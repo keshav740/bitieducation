@@ -26,6 +26,8 @@ import { AiOutlineUsergroupDelete } from "react-icons/ai";
 import { PiMicrosoftTeamsLogoLight } from "react-icons/pi";
 import { CiSettings } from "react-icons/ci";
 import Exports from "../../components/profile/Exports";
+import { Link } from "react-router-dom";
+import FreeDemo from "../../components/freedemo/FreeDemo";
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);
@@ -104,13 +106,13 @@ const SideBar = () => {
 
         {/* Sidebar content */}
         <nav>
-          <a
+          <Link
             href="/profile/username"
             className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <FaHouseChimneyUser className="w-6 h-6 mr-2" />
             Home
-          </a>
+          </Link>
           <div
             className="relative"
             onMouseEnter={handleMouseEnter}
@@ -137,50 +139,50 @@ const SideBar = () => {
             </button>
             {dropdownOpen && (
               <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
-                <a
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <MdDashboard className="w-6 h-6 mr-2" />
                   Dashboard
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <IoMdFingerPrint className="w-6 h-6 mr-2" />
                   Attendence
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <SiProducthunt className="w-6 h-6 mr-2" />
                   Productivity
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <MdLocalActivity className="w-6 h-6 mr-2" />
                   Activity
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <LuMonitorPlay className="w-6 h-6 mr-2" />
                   Monitor
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <MdOutlineAccessTimeFilled className="w-6 h-6 mr-2" />
                   Time Claim
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -213,13 +215,13 @@ const SideBar = () => {
             </button>
             {dropdownOpenOffice && (
               <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
-                <a
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200  py-5"
                 >
                   <RiLiveFill className="w-6 h-6 mr-2" />
                   Live Screens
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -250,27 +252,27 @@ const SideBar = () => {
             </button>
             {dropdownOpen1 && (
               <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
-                <a
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <ImProfile className="w-6 h-6 mr-2" />
                   Employees
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <PiTreeStructureDuotone className="w-6 h-6 mr-2" />
                   Org Structure
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="flex items-center px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <TbSettingsPause className="w-6 h-6 mr-2" />
                   HR Settings
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -301,103 +303,103 @@ const SideBar = () => {
             </button>
             {dropdownOpen2 && (
               <div className="bg-pink-100 rounded mt-1 py-1 space-y-1 px-10 hover:bg-pink-300">
-                <a
+                <Link
                   href="#"
-                  className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
+                  className="flex items-center  px-4 rounded transition duration-200 hover:bg-pink-100 py-5 "
                 >
                   <VscGithubProject className="w-6 h-6 mr-2" />
                   Projects
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
-                  className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-100 py-5"
+                  className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-100 py-5"
                 >
                   <GrTask className="w-6 h-6 mr-2" />
                   Taska
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
-                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                  className="flex items-center   px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <MdLocalActivity className="w-6 h-6 mr-2" />
                   Activity
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
-                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                  className="flex items-center   px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <VscWorkspaceTrusted className="w-6 h-6 mr-2" />
                   Role
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
-                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                  className="flex items-center   px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <VscReport className="w-6 h-6 mr-2" />
                   Reports
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
-                  className="flex items-center py-2.5 px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
+                  className="flex items-center   px-4 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <TbSettingsPause className="w-6 h-6 mr-2" />
                   Setting
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="flex items-center  px-2 rounded transition duration-200  py-5 hover:bg-pink-100"
                 >
                   <FaUsers className="w-6 h-6 mr-2" />
                   Members Allocation
-                </a>
+                </Link>
               </div>
             )}
           </div>
 
-          <a
+          <Link
             href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <AiOutlineUsergroupDelete className="w-6 h-6 mr-2" />
             Users
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <PiMicrosoftTeamsLogoLight className="w-6 h-6 mr-2" />
             Teams
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <MdEmail className="w-6 h-6 mr-2" />
             Mails
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <CiSettings className="w-6 h-6 mr-2" />
             Settings
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <CgProfile className="w-6 h-6 mr-2" />
             Clients
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
-            className="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
+            className="flex items-center   px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
           >
             <LuFileSpreadsheet className="w-6 h-6 mr-2" />
             Spreadsheets
-          </a>
+          </Link>
         </nav>
       </div>
 
@@ -410,6 +412,7 @@ const SideBar = () => {
         <SingleEmployee />
         <TopBar />
         <Exports />
+        <FreeDemo />
       </div>
     </div>
   );

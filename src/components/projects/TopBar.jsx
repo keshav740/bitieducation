@@ -10,6 +10,7 @@ import { IoMdAddCircle } from "react-icons/io";
 import { BiUpArrowAlt } from "react-icons/bi";
 import FormModal from "./FormModel";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -26,7 +27,7 @@ const TopBar = () => {
       <div className="flex p-2 h-full">
         <div className="w-full p-0 bg-pink-200">
           <div className="flex p-2 font-semibold text-xl space-x-10 border-b-2 border-red-500">
-            <a
+            <Link
               href="#"
               className="flex items-center space-x-1 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg px-10 relative overflow-hidden group"
               aria-label="Projects"
@@ -34,8 +35,8 @@ const TopBar = () => {
               <GoProjectSymlink />
               <p className="py-2">Projects</p>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="flex items-center space-x-1 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg px-10 relative overflow-hidden group"
               aria-label="Projects"
@@ -43,8 +44,8 @@ const TopBar = () => {
               <MdOutlineAddTask />
               <p className="py-2">Task</p>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="flex items-center space-x-1 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg px-10 relative overflow-hidden group"
               aria-label="Projects"
@@ -52,7 +53,7 @@ const TopBar = () => {
               <GrPerformance />
               <p className="py-2">Activity</p>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
           </div>
 
           <div className="flex justify-between p-2 bg-pink-300 rounded-t-lg px-10 mt-2 border-b-2 border-red-500">
@@ -83,22 +84,22 @@ const TopBar = () => {
                   </div>
                 </div>
               </div>
-              <a href="#">
+              <Link href="#">
                 <p className="px-1 text-xl hover:text-green-500 transition duration-300 font-semibold rounded-lg relative overflow-hidden">
                   <GrSearchAdvanced />
                 </p>
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <p className="px-1 text-xl hover:text-green-500 transition duration-300 font-semibold rounded-lg relative overflow-hidden">
                   <FaDownload />
                 </p>
-              </a>
+              </Link>
               <div>
-                <a href="#" onClick={handleOpenModal}>
+                <Link href="#" onClick={handleOpenModal}>
                   <p className="px-1 text-xl hover:text-green-500 transition duration-300 font-semibold rounded-lg relative overflow-hidden">
                     <IoMdAddCircle />
                   </p>
-                </a>
+                </Link>
                 <FormModal
                   isVisible={isModalVisible}
                   onClose={handleCloseModal}

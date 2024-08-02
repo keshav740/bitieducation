@@ -17,6 +17,8 @@ import SetUpTeamMembers from "../../components/modal/SetUpTeamMembers";
 import SetUpTrackerSetting from "../../components/modal/SetUpTrackerSetting";
 import { AiOutlineAudit } from "react-icons/ai";
 import LoginAudit from "../../components/modal/LoginAudit";
+import { Link } from "react-router-dom";
+import FileInvoice from "../../components/modal/FileInvoice";
 
 const TopBar = () => {
   const [dropdownOpen1, setDropdownOpen1] = useState(false); // Manage the dropdown for "Set up Your Account"
@@ -48,6 +50,10 @@ const TopBar = () => {
   const [isModalOpenSetupTeam, setIsModalOpenSetupTeam] = useState(false);
   const handleOpenModalSetupTeam = () => setIsModalOpenSetupTeam(true);
   const handleCloseModalSetupTeam = () => setIsModalOpenSetupTeam(false);
+
+  const [isOpenModalInvoice, setIsOpenModalInvoice] = useState(false);
+  const handleOpenModalInvoice = () => setIsOpenModalInvoice(true);
+  const handleCloseModalInvoice = () => setIsOpenModalInvoice(false);
 
   const [isModalOpenSetupTeamMembers, setIsModalOpenSetupTeamMembers] =
     useState(false);
@@ -95,31 +101,39 @@ const TopBar = () => {
       <div className="text-2xl">Logo</div>
       <div className="flex space-x-2 items-center">
         {/* Menu Links */}
-        <a
-          href="#"
+        <Link 
+          to='free-demo'
           className="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-pink-300 bg-pink-100 border-l-4 border-r-4 border-pink-400"
         >
           Free Demo
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-pink-300 bg-pink-100 border-l-4 border-r-4 border-pink-400"
+          onClick={(e) => {
+            e.preventDefault();
+            handleOpenModal();
+          }}
         >
           <LuDownloadCloud className="mr-2" /> Agent
-        </a>
+        </Link>
+        <DownloadTimeChampModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
         <div className="relative" ref={dropdownRef1}>
-          <a
+          <Link
             href="#"
             onClick={toggleDropdown1}
             className="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-pink-300 bg-pink-100 border-l-4 border-r-4 border-pink-400"
           >
             <RiUserSettingsLine className="mr-2" /> Set up Your Account : 30%{" "}
             <AiFillCaretDown className="ml-2" />
-          </a>
+          </Link>
           {dropdownOpen1 && (
             <div className="absolute left-0 mt-10 bg-pink-200 rounded-lg py-1 w-64 shadow-2xl shadow-pink-500/50">
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -135,7 +149,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Download Time Champ
                   </label>
-                </a>
+                </Link>
 
                 <DownloadTimeChampModal
                   isOpen={isModalOpen}
@@ -144,7 +158,7 @@ const TopBar = () => {
               </div>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -160,7 +174,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Setup Your Organization Name
                   </label>
-                </a>
+                </Link>
 
                 <SetUpOrgName
                   isOpen={isModalOpenSetup}
@@ -169,7 +183,7 @@ const TopBar = () => {
               </div>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -185,7 +199,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Setup Your Teams
                   </label>
-                </a>
+                </Link>
 
                 <SetUpTeam
                   isOpen={isModalOpenSetupTeam}
@@ -194,7 +208,7 @@ const TopBar = () => {
               </div>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -210,7 +224,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Setup Your Team Members
                   </label>
-                </a>
+                </Link>
 
                 <SetUpTeamMembers
                   isOpen={isModalOpenSetupTeamMembers}
@@ -219,7 +233,7 @@ const TopBar = () => {
               </div>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -235,7 +249,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Setup Your Tracker Setting
                   </label>
-                </a>
+                </Link>
 
                 <SetUpTrackerSetting
                   isOpen={isModalOpenSetupTrackerSetting}
@@ -244,7 +258,7 @@ const TopBar = () => {
               </div>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -260,7 +274,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Email Verification
                   </label>
-                </a>
+                </Link>
 
                 <EmailVerify
                   isOpen={isOpenModal}
@@ -269,7 +283,7 @@ const TopBar = () => {
               </div>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center py-2 px-4 text-sm hover:bg-pink-100 m-2"
                   onClick={(e) => {
@@ -285,7 +299,7 @@ const TopBar = () => {
                   <label htmlFor="link1-checkbox" className="flex-1">
                     Refer Time Champ to your Friends....
                   </label>
-                </a>
+                </Link>
 
                 <ReferTimeChamp
                   isOpen={isOpenModalRefer}
@@ -301,18 +315,26 @@ const TopBar = () => {
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
         >
-          <a
+          <Link
+            onClick={(e) => {
+              e.preventDefault();
+              handleOpenModalInvoice();
+            }}
             href="#"
             className="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-pink-300 bg-pink-100 border-l-4 border-r-4 border-pink-400"
           >
             <FaFileInvoice className="text-2xl" />
-          </a>
+          </Link>
           {showTooltip && (
             <div className="absolute left-1/2 transform -translate-x-1/2 mt-5 w-24 text-sm bg-pink-300 rounded-lg shadow-lg p-2 text-center">
               <SiWorkplace className="ml-8" />
               My Work
             </div>
           )}
+          <FileInvoice
+            isOpen={isOpenModalInvoice}
+            onClose={handleCloseModalInvoice}
+          />
         </div>
 
         {/* Dropdown Menu 2 */}
@@ -344,23 +366,23 @@ const TopBar = () => {
           </button>
           {dropdownOpen2 && (
             <div className="absolute right-0 mt-7 bg-pink-200 rounded-lg py-1 w-64 shadow-2xl shadow-pink-500/50">
-              <a
+              <Link
                 href="#"
                 className="flex items-center block py-2 px-4 text-lg hover:bg-pink-100 m-2"
                 onClick={() => setDropdownOpen2(false)}
               >
                 <FaRegUser className="mr-2" /> Profile
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="flex items-center block py-2 px-4  hover:bg-pink-100 text-lg m-2"
                 onClick={() => setDropdownOpen2(false)}
               >
                 <LuDownloadCloud className="mr-2" /> Exports
-              </a>
+              </Link>
 
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex items-center block py-2 px-4  hover:bg-pink-100 text-lg m-2"
                   onClick={(e) => {
@@ -369,27 +391,27 @@ const TopBar = () => {
                   }}
                 >
                   <AiOutlineAudit className="mr-2" /> Login Audit
-                </a>
+                </Link>
 
                 <LoginAudit
                   isOpen={isOpenModalLoginAudit}
                   onClose={handleCloseModalLoginAudit}
                 />
               </div>
-              <a
+              <Link
                 href="#"
                 className="flex items-center block py-2 px-4  hover:bg-pink-100 text-lg m-2"
                 onClick={() => setDropdownOpen2(false)}
               >
                 <LiaSignOutAltSolid className="mr-2" /> Sign Out
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="flex items-center block py-2 px-4  hover:bg-pink-100 text-lg m-2 border-t border-pink-500"
                 onClick={() => setDropdownOpen2(false)}
               >
                 <LuArrowDownLeftFromCircle className="mr-2" /> Version
-              </a>
+              </Link>
             </div>
           )}
         </div>

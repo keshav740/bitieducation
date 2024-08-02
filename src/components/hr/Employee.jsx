@@ -3,6 +3,7 @@ import { TbUserSearch } from "react-icons/tb";
 import { IoList } from "react-icons/io5";
 import { MdAirplanemodeInactive } from "react-icons/md";
 import { ImProfile } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const Employee = () => {
   return (
@@ -10,24 +11,24 @@ const Employee = () => {
       <div className="flex flex-col md:flex-row p-2 h-full">
         <div className="w-full md:w-1/3 md:p-4 p-0 bg-pink-200">
           <div className="flex justify-between border border-red-500 p-2 rounded-lg">
-            <a
+            <Link
               href="#"
               className="hover:bg-pink-100 hover:text-green-500 transition duration-300 rounded-lg p-2 font-semibold"
             >
               Department
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="hover:bg-pink-100 hover:text-green-500 transition duration-300 rounded-lg p-2 font-semibold"
             >
               Managers
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="hover:bg-pink-100 hover:text-green-500 transition duration-300 rounded-lg p-2 font-semibold"
             >
               Locations
-            </a>
+            </Link>
           </div>
 
           <div className="flex border border-red-500 p-2 mt-2 bg-pink-100 rounded-lg">
@@ -41,24 +42,24 @@ const Employee = () => {
             </div>
           </div>
           <div className="hover:bg-pink-200 transtion duration-300 border border-red-500 p-2 mt-2 bg-pink-100 rounded-lg">
-            <a href="#" className="flex justify-between font-semibold">
+            <Link href="#" className="flex justify-between font-semibold">
               <p>bitieducation</p>
               <span></span>
-            </a>
+            </Link>
           </div>
 
           <div className="hover:bg-pink-200 transtion duration-300 border border-red-500 p-2 mt-2 bg-pink-100 rounded-lg">
             <div className="items-center p-2 text-black-400">
-              <a href="#" className="flex justify-between font-semibold">
+              <Link href="#" className="flex justify-between font-semibold">
                 <p>IT</p>
                 <p>(1)</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="w-full md:w-7/10 p-4 bg-pink-300">
           <div className="flex flex-col md:flex-row md:justify-between mb-5">
-            <a
+            <Link
               href="#"
               className="bg-pink-400 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg font px-10 relative overflow-hidden group"
             >
@@ -69,7 +70,7 @@ const Employee = () => {
                 </div>
                 <div className="absolute inset-x-0 bottom-0 h-0.5 bg-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
               </div>
-            </a>
+            </Link>
             <div className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
               <div>
                 <div className="relative">
@@ -83,7 +84,7 @@ const Employee = () => {
                   </div>
                 </div>
               </div>
-              <a
+              <Link
                 href="#"
                 className="hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg"
               >
@@ -92,8 +93,8 @@ const Employee = () => {
                     <IoList className="text-xl" /> <p>List View</p>
                   </div>
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg"
               >
@@ -103,7 +104,7 @@ const Employee = () => {
                     <p>Show Inactive Employees</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 

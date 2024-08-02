@@ -7,6 +7,7 @@ import { GrDocumentWord } from "react-icons/gr";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { ImProfile } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const SingleEmployee = () => {
   const [activeSection, setActiveSection] = useState("primaryDetails");
@@ -477,27 +478,27 @@ const SingleEmployee = () => {
             <div className="flex flex-col md:flex-row p-2 h-160">
               <div className="w-full md:w-1/3 md:p-4 p-0 bg-pink-200">
                 <div className="hover:bg-pink-200 transtion duration-300 border border-red-500 p-2 mt-2 bg-pink-100 rounded-lg">
-                  <a href="#" className="flex justify-between font-semibold">
+                  <Link href="#" className="flex justify-between font-semibold">
                     <p>Degree & Certification</p>
                     <span></span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="hover:bg-pink-200 transtion duration-300 border border-red-500 p-2 mt-2 bg-pink-100 rounded-lg">
-                  <a href="#" className="flex justify-between font-semibold">
+                  <Link href="#" className="flex justify-between font-semibold">
                     <p>Previous Experience</p>
                     <span></span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="hover:bg-pink-200 transtion duration-300 border border-red-500 p-2 mt-2 bg-pink-100 rounded-lg">
-                  <a href="#" className="flex justify-between font-semibold">
+                  <Link href="#" className="flex justify-between font-semibold">
                     <p>Identity Docs</p>
                     <span></span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="w-full md:w-7/10 p-4 bg-pink-300">
                 <div className="flex flex-col w-full md:flex-row md:justify-between mb-5">
-                  <a
+                  <Link
                     href="#"
                     className="bg-pink-400 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg font px-10 relative overflow-hidden group"
                   >
@@ -508,7 +509,7 @@ const SingleEmployee = () => {
                       </div>
                       <div className="absolute inset-x-0 bottom-0 h-0.5 bg-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="flex flex-col md:flex-row">
@@ -679,7 +680,7 @@ const SingleEmployee = () => {
                 section: "documents",
               },
             ].map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href="#"
                 className="bg-pink-400 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg px-10 relative overflow-hidden group"
@@ -692,7 +693,7 @@ const SingleEmployee = () => {
                   </div>
                   <div className="absolute inset-x-0 bottom-0 h-0.5 bg-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -705,7 +706,7 @@ const SingleEmployee = () => {
               },
               { label: "Timeline", icon: <MdTimeline />, section: "timeline" },
             ].map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href="#"
                 className="bg-pink-400 hover:text-green-500 transition duration-300 font-semibold hover:bg-pink-200 rounded-lg px-5 relative overflow-hidden group"
@@ -718,7 +719,7 @@ const SingleEmployee = () => {
                   </div>
                   <div className="absolute inset-x-0 bottom-0 h-0.5 bg-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
 

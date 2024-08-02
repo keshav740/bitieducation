@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoMdAddCircle } from "react-icons/io";
-import { IoAddCircle } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import NewModal from "./insidemodal/NewFormModal";
+import { Link } from "react-router-dom";
 
 const FormModal = ({ isVisible, onClose }) => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -34,7 +34,7 @@ const FormModal = ({ isVisible, onClose }) => {
       >
         <div className="flex justify-between items-center border-b-2 border-red-500 pb-5">
           <div className="flex items-center space-x-4">
-            <a
+            <Link
               href="#"
               onClick={(e) => {
                 e.preventDefault();
@@ -47,8 +47,8 @@ const FormModal = ({ isVisible, onClose }) => {
             >
               <p className="py-2">Details</p>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               onClick={(e) => {
                 e.preventDefault();
@@ -61,8 +61,8 @@ const FormModal = ({ isVisible, onClose }) => {
             >
               <p className="py-2">Custom Fields</p>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               onClick={(e) => {
                 e.preventDefault();
@@ -75,7 +75,7 @@ const FormModal = ({ isVisible, onClose }) => {
             >
               <p className="py-2">Members</p>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
           </div>
           <button onClick={onClose} className="text-5xl hover:text-green-500">
             &times;
@@ -163,11 +163,11 @@ const FormModal = ({ isVisible, onClose }) => {
                   <div className="flex justify-between items-center px-10 py-5 border-b-2 border-red-500">
                     <p className="">Add Custom Fields To Project</p>
                     <div>
-                      <a href="#" onClick={handleOpenModal}>
+                      <Link href="#" onClick={handleOpenModal}>
                         <p className="px-1 text-xl hover:text-green-500 transition duration-300 font-semibold rounded-lg relative overflow-hidden">
                           <IoMdAddCircle />
                         </p>
-                      </a>
+                      </Link>
                       <NewModal
                         isVisible={isModalVisible}
                         onClose={handleCloseModal}
