@@ -48,7 +48,7 @@ export default function Carousel({
           <div
             key={i}
             onClick={() => setCurr(i)}  // Click handler to change the slide
-            className={`transition-all w-3 h-3 cursor-pointer bg-white rounded-full ${
+            className={`transition-all w-3 h-3 cursor-pointer bg-pink-400 rounded-full  ${
               curr === i ? "p-2" : "bg-opacity-50"
             }`}
           />
