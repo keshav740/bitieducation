@@ -5,6 +5,7 @@ import Layout from "./layout/Layout";
 import TimeTrackerTable from "./components/timetracker/TimeTrackerTable";
 import FreeDemo from "./components/freedemo/FreeDemo";
 import ConfirmationPage from "./components/freedemo/ConfirmationPage";
+import SignUp from "./components/freedemo/signup/SignUp";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/profile/username" element={<TimeTrackerTable />} />
           <Route path="/free-demo" element={<FreeDemo />} />
           <Route path="/confirmation" element={<ConfirmationPage />} />
+          <Route path="/sign-up" element={<SignUp />} />
         </Routes>
       </Router>
     </div>
