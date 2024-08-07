@@ -27,7 +27,8 @@ import { PiMicrosoftTeamsLogoLight } from "react-icons/pi";
 import { CiSettings } from "react-icons/ci";
 import Exports from "../../components/profile/Exports";
 import { Link } from "react-router-dom";
-import FreeDemo from "../../components/freedemo/FreeDemo";
+import DashBoard from "../../components/dashboard/DashBoard";
+
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);
@@ -92,27 +93,18 @@ const SideBar = () => {
     <div className="flex h-screen">
       {/* Sidebar */}
       <div
-        className={`bg-pink-200 w-64 space-y-6 py-7 px-2 fixed inset-y-0 left-0 transform ${
+        className={`bg-pink-200 w-64 space-y-6 py-7  px-2 fixed inset-y-0 left-0 transform ${
           open ? "" : "-translate-x-full"
         } md:relative md:translate-x-0 transition duration-200 ease-in-out overflow-y-auto`}
       >
-        {/* Sidebar toggle button */}
-        <button
-          onClick={toggleSidebar}
-          className="text-black hover:text-gray-500 md:hidden absolute top-2 right-2"
+        <Link
+          to="/"
+          className="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-pink-300 bg-pink-100 border-l-4 border-r-4 border-pink-400"
         >
-          {open ? "Close" : "Open"} Menu
-        </button>
-
-        {/* Sidebar content */}
+          <FaHouseChimneyUser className="w-6 h-6 mr-2" />
+          LOGO
+        </Link>
         <nav>
-          <Link
-            href="/profile/username"
-            className="flex items-center px-4 rounded transition duration-200 hover:bg-pink-300 py-5"
-          >
-            <FaHouseChimneyUser className="w-6 h-6 mr-2" />
-            Home
-          </Link>
           <div
             className="relative"
             onMouseEnter={handleMouseEnter}
@@ -412,7 +404,10 @@ const SideBar = () => {
         <SingleEmployee />
         <TopBar />
         <Exports />
-        <FreeDemo />
+
+
+
+        <DashBoard />
       </div>
     </div>
   );

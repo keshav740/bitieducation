@@ -97,8 +97,8 @@ const TopBar = () => {
   };
 
   return (
-    <div className="bg-pink-200 fixed top-0 left-0 right-0 h-16 flex items-center justify-between px-4 border-b border-red-600 py-11">
-      <div className="text-2xl">Logo</div>
+    <div className="bg-pink-200 fixed top-0 left-0 right-0 h-16 flex items-center justify-end px-4 border-b border-red-600 py-11">
+      
       <div className="flex space-x-2 items-center">
         {/* Menu Links */}
         <Link 

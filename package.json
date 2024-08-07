@@ -4,10 +4,12 @@
     "private": true,
     "dependencies": {
         "@heroicons/react": "^2.1.5",
+        "chart.js": "^4.4.3",
         "dayjs": "^1.11.12",
         "file-saver": "^2.0.5",
         "moment-timezone": "^0.5.45",
         "react": "^18.2.0",
+        "react-chartjs-2": "^5.2.0",
         "react-dom": "^18.2.0",
         "react-feather": "^2.0.10",
         "react-icons": "^5.2.1",

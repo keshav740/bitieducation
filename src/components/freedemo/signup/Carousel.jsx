@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "react-feather";
 
 export default function Carousel({
   children: slides,
-  autoSlide = false,
+  autoSlide = true,
   autoSlideInterval = 3000,
 }) {
   const [curr, setCurr] = useState(0);
@@ -32,13 +32,13 @@ export default function Carousel({
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
           onClick={prev}
-          className="p-2 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-2 rounded-full shadow bg-pink-300 text-gray-800 hover:bg-pink-100 transition duration-300"
         >
           <ChevronLeft size={40} />
         </button>
         <button
           onClick={next}
-          className="p-2 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-2 rounded-full shadow bg-pink-300 text-gray-800 hover:bg-pink-100 transition duration-300"
         >
           <ChevronRight size={40} />
         </button>
@@ -47,8 +47,8 @@ export default function Carousel({
         {slides.map((_, i) => (
           <div
             key={i}
-            onClick={() => setCurr(i)}  // Click handler to change the slide
-            className={`transition-all w-3 h-3 cursor-pointer bg-pink-400 rounded-full  ${
+            onClick={() => setCurr(i)}
+            className={`transition-all w-3 h-3 cursor-pointer bg-pink-400 rounded-full ${
               curr === i ? "p-2" : "bg-opacity-50"
             }`}
           />
