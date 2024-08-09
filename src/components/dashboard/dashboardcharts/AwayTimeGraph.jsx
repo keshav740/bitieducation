@@ -54,7 +54,7 @@ const AwayTimeGraph = () => {
   };
 
   return (
-    <div className="w-full mt-10 p-4">
+    <div className="w-full mt-10 p-4">  
       <div className="w-full p-4 bg-pink-200 shadow-lg rounded-lg mx-auto">
        
         <div className="p-4 bg-gray-100 rounded-lg">
